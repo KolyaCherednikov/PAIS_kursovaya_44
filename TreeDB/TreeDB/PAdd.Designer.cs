@@ -178,6 +178,7 @@
             this.Controls.Add(дата_рожденияLabel);
             this.Controls.Add(this.дата_рожденияDateTimePicker);
             this.Controls.Add(полLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "PAdd";
             this.Text = "PAdd";
             this.Load += new System.EventHandler(this.PAdd_Load);

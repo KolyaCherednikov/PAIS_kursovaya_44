@@ -32,8 +32,8 @@
             System.Windows.Forms.Label кодLabel;
             System.Windows.Forms.Label фИОLabel;
             System.Windows.Forms.Label label1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreForm));
             System.Windows.Forms.Label label2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,6 +99,15 @@
             label1.Size = new System.Drawing.Size(43, 13);
             label1.TabIndex = 9;
             label1.Text = "Семья:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(13, 89);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(30, 13);
+            label2.TabIndex = 12;
+            label2.Text = "Пол:";
             // 
             // dataGridView1
             // 
@@ -340,15 +349,6 @@
             this.textBox3.Size = new System.Drawing.Size(162, 20);
             this.textBox3.TabIndex = 11;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(13, 89);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(30, 13);
-            label2.TabIndex = 12;
-            label2.Text = "Пол:";
-            // 
             // PreForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,6 +365,7 @@
             this.Controls.Add(this.фИОTextBox);
             this.Controls.Add(this.memberBindingNavigator);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "PreForm";
             this.Text = "PreForm";
             this.Load += new System.EventHandler(this.PreForm_Load);

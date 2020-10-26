@@ -202,6 +202,7 @@
             this.Controls.Add(полLabel);
             this.Controls.Add(пасспортLabel);
             this.Controls.Add(семьяLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MAdd";
             this.Text = "MAdd";
             this.Load += new System.EventHandler(this.MAdd_Load);

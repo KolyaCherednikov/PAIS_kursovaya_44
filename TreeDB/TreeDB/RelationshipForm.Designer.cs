@@ -191,6 +191,7 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "RelationshipForm";
             this.Text = "RelationshipForm";
             this.Load += new System.EventHandler(this.RelationshipForm_Load);

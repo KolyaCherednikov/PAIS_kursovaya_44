@@ -35,8 +35,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MomEdit));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.treeDBDataSet = new TreeDB.TreeDBDataSet();
+            this.кодматериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.кодучастникаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фИОматериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.momBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.treeDBDataSet = new TreeDB.TreeDBDataSet();
             this.momTableAdapter = new TreeDB.TreeDBDataSetTableAdapters.MomTableAdapter();
             this.tableAdapterManager = new TreeDB.TreeDBDataSetTableAdapters.TableAdapterManager();
             this.memberTableAdapter = new TreeDB.TreeDBDataSetTableAdapters.MemberTableAdapter();
@@ -57,15 +60,12 @@
             this.фИО_материTextBox = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.кодматериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кодучастникаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.фИОматериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             код_материLabel = new System.Windows.Forms.Label();
             код_участникаLabel = new System.Windows.Forms.Label();
             фИО_материLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.treeDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.momBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.treeDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.momBindingNavigator)).BeginInit();
             this.momBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
@@ -122,15 +122,33 @@
             this.dataGridView1.Size = new System.Drawing.Size(507, 178);
             this.dataGridView1.TabIndex = 14;
             // 
-            // treeDBDataSet
+            // кодматериDataGridViewTextBoxColumn
             // 
-            this.treeDBDataSet.DataSetName = "TreeDBDataSet";
-            this.treeDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.кодматериDataGridViewTextBoxColumn.DataPropertyName = "Код_матери";
+            this.кодматериDataGridViewTextBoxColumn.HeaderText = "Код_матери";
+            this.кодматериDataGridViewTextBoxColumn.Name = "кодматериDataGridViewTextBoxColumn";
+            // 
+            // кодучастникаDataGridViewTextBoxColumn
+            // 
+            this.кодучастникаDataGridViewTextBoxColumn.DataPropertyName = "Код_участника";
+            this.кодучастникаDataGridViewTextBoxColumn.HeaderText = "Код_участника";
+            this.кодучастникаDataGridViewTextBoxColumn.Name = "кодучастникаDataGridViewTextBoxColumn";
+            // 
+            // фИОматериDataGridViewTextBoxColumn
+            // 
+            this.фИОматериDataGridViewTextBoxColumn.DataPropertyName = "ФИО_матери";
+            this.фИОматериDataGridViewTextBoxColumn.HeaderText = "ФИО_матери";
+            this.фИОматериDataGridViewTextBoxColumn.Name = "фИОматериDataGridViewTextBoxColumn";
             // 
             // momBindingSource
             // 
             this.momBindingSource.DataMember = "Mom";
             this.momBindingSource.DataSource = this.treeDBDataSet;
+            // 
+            // treeDBDataSet
+            // 
+            this.treeDBDataSet.DataSetName = "TreeDBDataSet";
+            this.treeDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // momTableAdapter
             // 
@@ -308,24 +326,6 @@
             this.memberBindingSource.DataMember = "Member";
             this.memberBindingSource.DataSource = this.treeDBDataSet;
             // 
-            // кодматериDataGridViewTextBoxColumn
-            // 
-            this.кодматериDataGridViewTextBoxColumn.DataPropertyName = "Код_матери";
-            this.кодматериDataGridViewTextBoxColumn.HeaderText = "Код_матери";
-            this.кодматериDataGridViewTextBoxColumn.Name = "кодматериDataGridViewTextBoxColumn";
-            // 
-            // кодучастникаDataGridViewTextBoxColumn
-            // 
-            this.кодучастникаDataGridViewTextBoxColumn.DataPropertyName = "Код_участника";
-            this.кодучастникаDataGridViewTextBoxColumn.HeaderText = "Код_участника";
-            this.кодучастникаDataGridViewTextBoxColumn.Name = "кодучастникаDataGridViewTextBoxColumn";
-            // 
-            // фИОматериDataGridViewTextBoxColumn
-            // 
-            this.фИОматериDataGridViewTextBoxColumn.DataPropertyName = "ФИО_матери";
-            this.фИОматериDataGridViewTextBoxColumn.HeaderText = "ФИО_матери";
-            this.фИОматериDataGridViewTextBoxColumn.Name = "фИОматериDataGridViewTextBoxColumn";
-            // 
             // MomEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,12 +340,13 @@
             this.Controls.Add(this.momBindingNavigator);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MomEdit";
             this.Text = "MomEdit";
             this.Load += new System.EventHandler(this.MomEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.treeDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.momBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.treeDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.momBindingNavigator)).EndInit();
             this.momBindingNavigator.ResumeLayout(false);
             this.momBindingNavigator.PerformLayout();

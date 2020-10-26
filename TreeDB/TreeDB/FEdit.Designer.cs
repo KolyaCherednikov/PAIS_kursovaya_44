@@ -419,6 +419,7 @@
             this.Controls.Add(фИО_материLabel);
             this.Controls.Add(this.фИО_материTextBox);
             this.Controls.Add(this.familyBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FEdit";
             this.Text = "FEdit";
             this.Load += new System.EventHandler(this.FEdit_Load);
