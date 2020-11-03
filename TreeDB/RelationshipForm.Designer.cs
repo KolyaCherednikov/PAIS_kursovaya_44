@@ -48,6 +48,7 @@
             this.momTableAdapter = new TreeDB.TreeDBDataSetTableAdapters.MomTableAdapter();
             this.passportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.passportTableAdapter = new TreeDB.TreeDBDataSetTableAdapters.PassportTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -178,11 +179,22 @@
             // 
             this.passportTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(329, 525);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 28);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Закрыть";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // RelationshipForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 531);
+            this.ClientSize = new System.Drawing.Size(794, 565);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView4);
             this.Controls.Add(this.label3);
@@ -231,5 +243,6 @@
         private TreeDBDataSetTableAdapters.MomTableAdapter momTableAdapter;
         private System.Windows.Forms.BindingSource passportBindingSource;
         private TreeDBDataSetTableAdapters.PassportTableAdapter passportTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }
