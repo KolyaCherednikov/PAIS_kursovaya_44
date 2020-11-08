@@ -1,0 +1,15 @@
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\bin\Debug\StoreDB.exe.config
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\bin\Debug\StoreDB.exe
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\bin\Debug\StoreDB.pdb
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.csprojAssemblyReference.cache
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.Properties.Resources.resources
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.csproj.GenerateResource.cache
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.exe
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.pdb
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.ADDForm.resources
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.Basket.resources
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.MainForm.resources
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.ADDFormToFactories.resources
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.ADDFormToTypes.resources
+C:\Users\Vlad\Source\Repos\StoreDB\StoreDB\obj\Debug\StoreDB.ADDFormToBuyers.resources
